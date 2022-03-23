@@ -39,7 +39,7 @@ for(i=0;i<2;i++){
         })
     }else{
         tab.forEach(element => {
-            template = `<td><img src="${element.img}" height="${element.value}" width="50px"/></td>`;
+            template += `<td><img src="${element.img}" height="${element.value}" width="50px"/></td>`;
         });
     }
     template+= `</tr>`;
