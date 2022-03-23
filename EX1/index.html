@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICE 1</title>
+    <style>
+        input,#table-zone{
+            display: block;
+            width: 30%;
+            outline: none;
+        }
+        #rows,#cols{
+            border: none;
+            border: 1px solid rgba(0, 0, 0, 0.247);
+            margin: 10px 0px;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        #btn{
+            border: none;
+            color: white;
+            font-weight: bold;
+            background-color: rgb(78, 78, 241);
+            padding: 10px;
+            border-radius: 3px;
+        }
+        .showTable{
+            float: right;
+            text-decoration: none;
+            border: none;
+            color: white;
+            font-weight: bold;
+            background-color: rgb(78, 78, 241);
+            padding: 10px;
+            border-radius: 3px;
+        }
+        .table-generator{
+            width: 50%;
+        }
+        .btns{
+            width:26.6em;;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-gnerator">
+    <input name="rows" id="rows" placeholder="enter le nobre de ligne"/>
+    <input name="cols" id="cols" placeholder="enter le nobre de colones"/>
+    <div class="btns">
+        <button id="btn" onclick="tableMaker()">GENERATE TABLE</button>
+        <a href="./show.html" class="showTable" style="display:none;">show table</a>    
+    </div>
+</div>
+<script src="script1.js" type="text/javascript"></script>
+</body>
+</html>
