@@ -1,11 +1,9 @@
+let Txt = "queue";
 
-function charRandom(){
+let i;
+
+for(i=0;i<5;i++){
     
-    let chaineCar = "DAR";
-    const size = chaineCar.length - 1;
-    let i=size;
-    while(i>=0){
-        console.log("hey");
-        i--;
-    }
+    console.log(Txt.substr(1));
+
 }

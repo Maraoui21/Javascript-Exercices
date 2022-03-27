@@ -1,14 +1,14 @@
 const tab = [
     {   title:"lundi",
-        value:90,
+        value:120,
         img: "./img/green.png"
     },
     {   title:"mardi",   
-        value:60,
+        value:90,
         img: "./img/yellow.png"
     },
     {   title:"mercredi",
-        value:35,
+        value:55,
         img: "./img/black.png"
     },
     {   title:"jeudi",
@@ -16,7 +16,7 @@ const tab = [
         img: "./img/red.png"
     },
     {   title:"vendredi",
-        value:15,
+        value:200,
         img: "./img/grey.png"
     },
     {   title:"samedi",
