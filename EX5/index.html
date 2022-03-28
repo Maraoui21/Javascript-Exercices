@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        table{
+            width: 50%;
+            background-color: rgb(119, 119, 233);
+            border-radius: 3px;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+        ul{
+            padding: 0;
+        }
+        #link-content{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #link-content li img{
+            height: 400px;
+            border-radius: 3px;
+            border: 2px solid rgba(0, 0, 0, 0.253);
+        }
+        ul li{
+            list-style: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        ul:first-child{
+            display: flex;
+            justify-content: start;
+        }
+        ul:first-child li{
+            display: block;
+            padding: 20px;
+        }
+        .hidden{
+            display: none;
+        }
+        .visible{
+            display: block;
+        }
+        .active{
+            background-color: black;
+            border-radius:3px;
+        }
+        .unactive{
+            background:none;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td id="page-divider">
+                <ul id="link">
+                    <li onclick="DisplayContent(0)" class="active">TAB 1</li>
+                    <li onclick="DisplayContent(1)">TAB 2</li>
+                    <li onclick="DisplayContent(2)">TAB 3</li>
+                </ul>
+                <ul id="link-content">
+                    <li class="visible"><img src="./img/1.avif" width="600px"/></li>
+                    <li class="hidden"><img src="./img/2.avif" width="600px"/></li>
+                    <li class="hidden"><img src="./img/3.avif" width="600px"/></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
