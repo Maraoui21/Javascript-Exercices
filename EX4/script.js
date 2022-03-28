@@ -10,4 +10,5 @@ setInterval(changeLetter = () =>{
         NewTxt += Txt[i];
     }
     document.querySelector('#text').innerHTML = NewTxt;
+    document.querySelector('title').innerHTML = NewTxt;
 },1000);
